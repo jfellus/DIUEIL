@@ -104,6 +104,10 @@
   $(function() {
     svg = $("svg")
 
+    $(window).keyup((e) => {
+      if(e.key == ' ') location.reload()
+    })
+
     $("#bar").attr("width", BW).attr("height", BH)
     $("#ball").attr("r", R)
     W = $("svg").width()
